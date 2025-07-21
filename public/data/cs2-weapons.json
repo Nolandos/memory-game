@@ -1,0 +1,251 @@
+{
+  "rarities": {
+    "consumer": {
+      "id": 1,
+      "name": "Consumer Grade",
+      "color": "consumer"
+    },
+    "industrial": {
+      "id": 2,
+      "name": "Industrial Grade",
+      "color": "industrial"
+    },
+    "mil-spec": {
+      "id": 3,
+      "name": "Mil-Spec",
+      "color": "mil-spec"
+    },
+    "restricted": {
+      "id": 4,
+      "name": "Restricted",
+      "color": "restricted"
+    },
+    "classified": {
+      "id": 5,
+      "name": "Classified",
+      "color": "classified"
+    },
+    "covert": {
+      "id": 6,
+      "name": "Covert",
+      "color": "covert"
+    },
+    "contraband": {
+      "id": 7,
+      "name": "Contraband",
+      "color": "contraband"
+    }
+  },
+  "weapons": [
+    {
+      "id": 1,
+      "baseWeapon": "AK-47",
+      "skins": [
+        {
+          "id": "ak47-safari-mesh",
+          "name": "Safari Mesh",
+          "rarity": "consumer",
+          "imageUrl": "ak47-safari-mesh.webp"
+        },
+        {
+          "id": "ak47-slate",
+          "name": "Slate",
+          "rarity": "industrial",
+          "imageUrl": "ak47-slate.webp"
+        },
+        {
+          "id": "ak47-elite-build",
+          "name": "Elite Build",
+          "rarity": "mil-spec",
+          "imageUrl": "ak47-elite-build.webp"
+        },
+        {
+          "id": "ak47-redline",
+          "name": "Redline",
+          "rarity": "restricted",
+          "imageUrl": "ak47-redline.webp"
+        },
+        {
+          "id": "ak47-neon-rider",
+          "name": "Neon Rider",
+          "rarity": "classified",
+          "imageUrl": "ak47-neon-rider.webp"
+        },
+        {
+          "id": "ak47-asiimov",
+          "name": "Asiimov",
+          "rarity": "covert",
+          "imageUrl": "ak47-asiimov.webp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "baseWeapon": "AWP",
+      "skins": [
+        {
+          "id": "awp-safari-mesh",
+          "name": "Safari Mesh",
+          "rarity": "consumer",
+          "imageUrl": "awp-safari-mesh.webp"
+        },
+        {
+          "id": "awp-pit-viper",
+          "name": "Pit Viper",
+          "rarity": "industrial",
+          "imageUrl": "awp-pit-viper.webp"
+        },
+        {
+          "id": "awp-atheris",
+          "name": "Atheris",
+          "rarity": "mil-spec",
+          "imageUrl": "awp-atheris.webp"
+        },
+        {
+          "id": "awp-electric-hive",
+          "name": "Electric Hive",
+          "rarity": "restricted",
+          "imageUrl": "awp-electric-hive.webp"
+        },
+        {
+          "id": "awp-oni-taiji",
+          "name": "Oni Taiji",
+          "rarity": "classified",
+          "imageUrl": "awp-oni-taiji.webp"
+        },
+        {
+          "id": "awp-dragon-lore",
+          "name": "Dragon Lore",
+          "rarity": "covert",
+          "imageUrl": "awp-dragon-lore.webp"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "baseWeapon": "M4A4",
+      "skins": [
+        {
+          "id": "m4a4-jungle-tiger",
+          "name": "Jungle Tiger",
+          "rarity": "consumer",
+          "imageUrl": "m4a4-jungle-tiger.webp"
+        },
+        {
+          "id": "m4a4-faded-zebra",
+          "name": "Faded Zebra",
+          "rarity": "industrial",
+          "imageUrl": "m4a4-faded-zebra.webp"
+        },
+        {
+          "id": "m4a4-evil-daimyo",
+          "name": "Evil Daimyo",
+          "rarity": "mil-spec",
+          "imageUrl": "m4a4-evil-daimyo.webp"
+        },
+        {
+          "id": "m4a4-griffin",
+          "name": "Griffin",
+          "rarity": "restricted",
+          "imageUrl": "m4a4-griffin.webp"
+        },
+        {
+          "id": "m4a4-royal-paladin",
+          "name": "Royal Paladin",
+          "rarity": "classified",
+          "imageUrl": "m4a4-royal-paladin.webp"
+        },
+        {
+          "id": "m4a4-howl",
+          "name": "Howl",
+          "rarity": "contraband",
+          "imageUrl": "m4a4-howl.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "baseWeapon": "Desert Eagle",
+      "skins": [
+        {
+          "id": "deagle-urban-ddpat",
+          "name": "Urban DDPAT",
+          "rarity": "consumer",
+          "imageUrl": "deagle-urban-ddpat.webp"
+        },
+        {
+          "id": "deagle-night",
+          "name": "Night",
+          "rarity": "industrial",
+          "imageUrl": "deagle-night.webp"
+        },
+        {
+          "id": "deagle-meteorite",
+          "name": "Meteorite",
+          "rarity": "mil-spec",
+          "imageUrl": "deagle-meteorite.webp"
+        },
+        {
+          "id": "deagle-conspiracy",
+          "name": "Conspiracy",
+          "rarity": "restricted",
+          "imageUrl": "deagle-conspiracy.webp"
+        },
+        {
+          "id": "deagle-kumicho-dragon",
+          "name": "Kumicho Dragon",
+          "rarity": "classified",
+          "imageUrl": "deagle-kumicho-dragon.webp"
+        },
+        {
+          "id": "deagle-blaze",
+          "name": "Blaze",
+          "rarity": "covert",
+          "imageUrl": "deagle-blaze.webp"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "baseWeapon": "USP-S",
+      "skins": [
+        {
+          "id": "usp-s-forest-leaves",
+          "name": "Forest Leaves",
+          "rarity": "consumer",
+          "imageUrl": "usp-s-forest-leaves.webp"
+        },
+        {
+          "id": "usp-s-night-ops",
+          "name": "Night Ops",
+          "rarity": "industrial",
+          "imageUrl": "usp-s-night-ops.webp"
+        },
+        {
+          "id": "usp-s-torque",
+          "name": "Torque",
+          "rarity": "mil-spec",
+          "imageUrl": "usp-s-torque.webp"
+        },
+        {
+          "id": "usp-s-cyrex",
+          "name": "Cyrex",
+          "rarity": "restricted",
+          "imageUrl": "usp-s-cyrex.webp"
+        },
+        {
+          "id": "usp-s-neo-noir",
+          "name": "Neo-Noir",
+          "rarity": "classified",
+          "imageUrl": "usp-s-neo-noir.webp"
+        },
+        {
+          "id": "usp-s-kill-confirmed",
+          "name": "Kill Confirmed",
+          "rarity": "covert",
+          "imageUrl": "usp-s-kill-confirmed.webp"
+        }
+      ]
+    }
+  ]
+}
