@@ -54,6 +54,13 @@ npm install
 npm run dev
 ```
 
+### Running tests
+
+```sh
+npm run test:unit
+```
+
+
 The application will be available at http://localhost:5173
 
 ### Building for Production
