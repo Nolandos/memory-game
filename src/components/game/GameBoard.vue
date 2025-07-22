@@ -72,7 +72,6 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
 
   if (scaleX > 0) {
     ctx.fillStyle = '#E67E22'
-    
   } else {
     const rarity = tile.rarity || WeaponRarity.CONSUMER
     let baseColor1, baseColor2, backgroundColor
@@ -133,13 +132,18 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
     }
 
     const gradient = ctx.createLinearGradient(-width / 2, -height / 2, width / 2, height / 2)
-    
+
     gradient.addColorStop(0, hexToRgba(baseColor2, 1.0))
     gradient.addColorStop(0.15, hexToRgba(baseColor2, 1.0))
     gradient.addColorStop(0.5, hexToRgba(baseColor1, 0.9))
     gradient.addColorStop(1.0, hexToRgba(baseColor1, 0.7))
-    
-    const highlightGradient = ctx.createLinearGradient(-width / 2, -height / 2, width / 2, -height * 0.3)
+
+    const highlightGradient = ctx.createLinearGradient(
+      -width / 2,
+      -height / 2,
+      width / 2,
+      -height * 0.3,
+    )
     highlightGradient.addColorStop(0, hexToRgba('#ffffff', 0.3))
     highlightGradient.addColorStop(1, hexToRgba('#ffffff', 0.0))
 
@@ -148,7 +152,7 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
     ctx.beginPath()
     ctx.roundRect(-width / 2, -height / 2, width, height, tileBorderRadius)
     ctx.fill()
-    
+
     ctx.fillStyle = highlightGradient
     ctx.beginPath()
     ctx.roundRect(-width / 2, -height / 2, width, height, tileBorderRadius)
@@ -177,7 +181,7 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
   ctx.shadowBlur = 0
   ctx.shadowOffsetX = 0
   ctx.shadowOffsetY = 0
-  
+
   if (scaleX > 0) {
     ctx.fillStyle = '#FFFFFF'
     ctx.font = `bold ${Math.round(height * 0.3)}px Arial`
@@ -193,7 +197,6 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
     let imageDisplayed = false
     let displayedWeaponName = ''
     const maxWidth = width * 0.8
-    const metrics = ctx.measureText(skinName)
 
     if (tile.skinId && gameState.value.weaponImages && gameState.value.weaponImages[tile.skinId]) {
       const img = gameState.value.weaponImages[tile.skinId]
@@ -239,15 +242,12 @@ const drawTile = (ctx: CanvasRenderingContext2D, tile: Tile) => {
 
     let textToDisplay = displayedWeaponName
     if (ctx.measureText(textToDisplay).width > maxWidth) {
-      while (
-        ctx.measureText(textToDisplay + '...').width > maxWidth &&
-        textToDisplay.length > 0
-      ) {
+      while (ctx.measureText(textToDisplay + '...').width > maxWidth && textToDisplay.length > 0) {
         textToDisplay = textToDisplay.slice(0, -1)
       }
       textToDisplay += '...'
     }
-    
+
     ctx.fillText(textToDisplay, 0, height * 0.32)
   }
 

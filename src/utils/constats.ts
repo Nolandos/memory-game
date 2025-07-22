@@ -6,8 +6,8 @@ export const boardConfig = {
   maxFlippedTiles: 2,
   flipBackDelay: 1000,
   parallaxStrength: 7,
-  maxContainerWidth: 800,  
-  aspectRatio: 1.6     
+  maxContainerWidth: 800,
+  aspectRatio: 1.6,
 }
 
 export const storageKeys = {

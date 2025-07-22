@@ -2,13 +2,10 @@
 
 @theme {
   --color-border-primary: #42b883;
-  --color-logo-primary: #FFD700;
+  --color-logo-primary: #ffd700;
   --spacing-modal-spacing: 20px 24px;
   --text-shadow-title: 0 0 20px rgba(255, 215, 0, 0.3);
-  --text-shadow-logo:
-    0 0 10px #FFD700,
-    0 0 20px #FFD700,
-    0 0 30px #FFD700;
+  --text-shadow-logo: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
   --animate-logo: glow 2s ease-in-out infinite alternate;
 
   /* CS2 Rarity Gradients */

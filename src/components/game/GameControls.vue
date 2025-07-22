@@ -24,7 +24,9 @@ const closeResultsModal = () => {
 </script>
 
 <template>
-  <div class="border border-border-primary rounded-lg p-modal-spacing w-full min-w-[320px] max-w-[550px]">
+  <div
+    class="border border-border-primary rounded-lg p-modal-spacing w-full min-w-[320px] max-w-[550px]"
+  >
     <div class="flex flex-col gap-4 items-center">
       <button
         @click="handleNewGameClick"

@@ -88,7 +88,9 @@ watch(
                 :key="index"
                 class="hover:bg-gray-700 border-b border-gray-700"
               >
-                <td class="py-3 px-4 text-white">{{ new Date(game.timestamp).toLocaleString() }}</td>
+                <td class="py-3 px-4 text-white">
+                  {{ new Date(game.timestamp).toLocaleString() }}
+                </td>
                 <td class="py-3 px-4 text-white">{{ formatDifficulty(game.difficulty) }}</td>
                 <td class="py-3 px-4 text-white">{{ game.moveCount }}</td>
                 <td class="py-3 px-4 text-white">{{ formatTime(game.elapsedTime) }}</td>
@@ -111,7 +113,6 @@ watch(
 </template>
 
 <style scoped>
-
 .max-h-\[60vh\]::-webkit-scrollbar {
   width: 8px;
 }

@@ -13,11 +13,11 @@ const { gameState } = storeToRefs(store)
       <span class="text-logo-primary text-shadow-logo animate-logo">CS2</span>
       <span class="text-white ml-4">Memory Game</span>
     </h1>
-    
+
     <div v-if="!gameState.isStarted" class="mt-12 w-full flex justify-center">
       <GameControls />
     </div>
-    
+
     <GameBoard />
   </div>
 </template>

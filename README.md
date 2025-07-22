@@ -1,64 +1,75 @@
-# memory-game
+# CS2 Memory Game
 
-This template should help get you started developing with Vue 3 in Vite.
+## About the Project
 
-## Recommended IDE Setup
+CS2 Memory Game is an interactive memory game inspired by Counter-Strike 2, built using Vue.js. The game involves matching pairs of tiles featuring weapons and skins from CS2. The project employs advanced canvas rendering techniques to create dynamic and responsive game tiles with visual effects.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Key Features
 
-## Type Support for `.vue` Imports in TS
+- Four difficulty levels (Easy, Medium, Hard, Expert)
+- Board generation based on seed (allows recreation of the same board)
+- Responsive design optimized for both mobile and desktop devices
+- Dynamic visual effects for tiles (parallax, gradient, shadows)
+- Game statistics and history tracking
+- Distinctive CS2 style with orange theme
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Technologies Used
 
-## Customize configuration
+The project utilizes the following main technologies and libraries:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Vue 3** - frontend UI framework
+- **TypeScript** - statically typed JavaScript
+- **Pinia** - state management library
+- **Anime.js** - animation library
+- **TailwindCSS** - CSS framework for styling
+- **Canvas API** - for rendering game tiles
+- **Vite** - fast build tool
+- **seedrandom** - for generating deterministic random game boards
+- **uuid** - unique identifier generation
 
-## Project Setup
+## Installation and Usage
+
+### Prerequisites
+
+- Node.js (version 18 or newer)
+- npm (Node.js package manager)
+
+### Installation
 
 ```sh
+# Clone the repository (if not already downloaded)
+# git clone [repo-url] memory-game
+# cd memory-game
+
+# Install dependencies
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Running in Development Mode
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+The application will be available at http://localhost:5173
+
+### Building for Production
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Compiled files will be available in the `dist` directory
+
+### Running Production Preview
 
 ```sh
-npm run test:unit
+npm run preview
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### Linting and Code Formatting
 
 ```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+npm run lint     # Run ESLint
+npm run format   # Format code using Prettier
 ```

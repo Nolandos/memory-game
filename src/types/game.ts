@@ -85,10 +85,10 @@ export interface Tile {
   width: number
   height: number
   scaleX: number
-  isRevealed: boolean
+  isRevealed?: boolean
   isAnimating: boolean
-  isMatched: boolean
-  value: string | number
+  isMatched?: boolean
+  value?: string | number
   baseWeapon?: string
   name?: string
   weaponId?: string

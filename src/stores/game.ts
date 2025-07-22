@@ -348,7 +348,11 @@ export const useGameStore = defineStore('game', () => {
       }
     }
 
-    if (gameState.value.isStarted && gameState.value.moveCount > 0 && gameState.value.elapsedTime > 0) {
+    if (
+      gameState.value.isStarted &&
+      gameState.value.moveCount > 0 &&
+      gameState.value.elapsedTime > 0
+    ) {
       startGameTimer()
     }
   }
