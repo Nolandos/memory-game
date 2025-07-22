@@ -1,5 +1,8 @@
 # CS2 Memory Game
 
+## Deploy
+The application is available: https://memory-game-nine-ruddy.vercel.app/
+
 ## About the Project
 
 CS2 Memory Game is an interactive memory game inspired by Counter-Strike 2, built using Vue.js. The game involves matching pairs of tiles featuring weapons and skins from CS2. The project employs advanced canvas rendering techniques to create dynamic and responsive game tiles with visual effects.
